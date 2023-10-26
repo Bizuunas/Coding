@@ -1,0 +1,28 @@
+/* body {
+    background: orange;
+} */
+
+h1 {
+    background: darkgrey;
+}
+
+p,
+li {
+    font-size: 20px;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+li {
+    color: chocolate;
+}
+
+ul {
+    border: 2px solid red;
+}
+
+ol {
+    background-color: bisque;
+}

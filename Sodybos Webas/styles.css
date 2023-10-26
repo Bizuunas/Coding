@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.pirmas-lapas{
+    position: sticky;
+    text-align: center;
+    color: white;
+    padding: none;
+}
+.centered1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Helvetica Neue";
+    font-size: 100px;
+}
+.centered2{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-family: "Helvetica Neue";
+    letter-spacing: 2px;
+}
+
+/* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+direction: ltr;
+text-align: center;
+box-sizing: border-box;
+z-index: 10;
+margin: 0;
+letter-spacing: 1px;
+text-shadow: 1px 1px 3px rgba(0,0,0,.3);
+font-weight: 300;
+font-size: 16px;
+line-height: 24px;
+padding: 15px 0;
+color: #ffffff; */
+
+.menu{
+    position: absolute;
+    top: 170%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 25px;
+    text-emphasis-position: auto;
+}
+li{
+    position: relative;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 35%;
+    font-family: 'Poppins';
+    font-size: 30px;
+    letter-spacing: 2px;
+    
+}
+.background{
+    width: 204.5vh;
+    height: 105.7vh;
+    top: auto;
+    color: #fff;
+    position: relative;
+    background: linear-gradient(45deg, #6f6a52d0, #966e33bd);
+    flex-direction: column;
+    background-position: fill;
+    background-attachment: scroll;
+    box-sizing: border-box;
+    padding: 100px 0px;
+    display: flex;
+}
+
+/* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+color: #000000;
+line-height: 1.68;
+font-size: 16px;
+box-sizing: border-box;
+background-attachment: scroll!important;
+background-position: center!important;
+display: flex;
+flex-wrap: nowrap;
+justify-content: space-between;
+align-items: flex-start;
+flex-direction: column;
+border-bottom: 1px solid rgb(214, 80, 80);
+padding: 100px 0px; */
+
+
+/* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+color: #000000;
+line-height: 1.68;
+font-size: 16px;
+text-align: left;
+box-sizing: border-box; */
+
+/* .subtitle{
+    background-color: #dd9819;
+    bottom: 100px;
+    width: 100px;
+    height: 1px;
+    text-align: center;
+
+} */
+
+h2{
+    background-color: #dd9819;
+    width: 100px;
+    height: 2px;
+
+}
