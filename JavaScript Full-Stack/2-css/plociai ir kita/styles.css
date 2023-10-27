@@ -18,7 +18,7 @@ body {
     width: 50%;
 }
 
-#ketvirtas{
+#ketvirtas {
     background-color: beige;
     width: 800px;
     height: 200px;
@@ -51,12 +51,14 @@ body {
     /* max-height 400px; */
 }
 
-#astuntas .vaikinis{
+#astuntas .vaikinis {
     background-color: white;
     height: 50%;
 }
 
-table, td, th {
+table,
+td,
+th {
     border: 2px solid black;
     border-collapse: collapse;
 }
@@ -80,4 +82,45 @@ ol#antras-sarasas {
     list-style-type: lower-alpha;
 }
 
-a
+#devintas a {
+    text-decoration: none;
+    background: black;
+    color: white;
+    transition: 0.3s all;
+    border-radius: 40%;
+    padding: 10px;
+}
+
+#devintas a:hover {
+    background: red;
+}
+
+#desimtas {
+    width: 200px;
+    background: orange;
+    transition: 0.5s all;
+}
+
+#desimtas:hover {
+    width: 250px;
+    background: royalblue;
+}
+
+#vienuoliktas {
+    width: 300px;
+    height: 200px;
+    background: red;
+    transition: 0.3s all;
+}
+
+#vienuoliktas:hover {
+    background: white;
+}
+
+#vienuoliktas p {
+    transition: 0.5s all;
+}
+
+#vienuoliktas:hover p {
+    color: red;
+}
