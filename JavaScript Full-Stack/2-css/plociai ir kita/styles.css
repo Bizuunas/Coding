@@ -39,7 +39,6 @@ body {
 #sestas {
     background: gold;
     width: 300px;
-    height: 150px;
 }
 
 #septintas {
@@ -72,3 +71,13 @@ table, td, th {
 #kita-lentele td {
     vertical-align: text-top;
 }
+
+ul#pirmas-sarasas {
+    list-style-type: square;
+}
+
+ol#antras-sarasas {
+    list-style-type: lower-alpha;
+}
+
+a
