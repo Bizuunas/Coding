@@ -1,0 +1,25 @@
+body {
+    background-color: grey;
+}
+
+.beige-background {
+    background-color: beige;
+}
+
+h2 {
+    background-color: royalblue;
+    color: white;
+}
+
+a {
+    color: red;
+}
+
+.letterColorGrey {
+    color: grey;
+}
+
+h1 {
+    background-color: black;
+    color: white;
+}

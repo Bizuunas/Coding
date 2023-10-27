@@ -1,0 +1,32 @@
+body{
+    background-color: black;
+}
+
+h1 {
+    background-color: white
+}
+
+h2 {
+    background-color: grey;
+}
+
+div {
+    background-color: white;
+}
+
+h3 {
+    color: red;
+}
+
+a {
+    color: white;
+    background-color: red;
+}
+
+p {
+    color: blue;
+}
+
+div div {
+    background-color: beige;
+}

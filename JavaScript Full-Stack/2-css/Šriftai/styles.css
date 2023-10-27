@@ -1,0 +1,36 @@
+/* Galimi naudoti sriftai
+
+font-family: 'Open Sans', sans-serif; WEIGHT: 400
+
+font-family: 'Roboto', sans-serif; WEIGHT: 900 */
+
+/* sriftu uzdejimas */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+p, a, li, input {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+p {
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
