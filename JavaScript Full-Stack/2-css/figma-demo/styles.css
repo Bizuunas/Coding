@@ -1,0 +1,35 @@
+/* SRIFTU STILIAI
+
+font-family: 'Gloria Hallelujah', cursive;
+
+font-family: 'Inter', sans-serif; */
+
+body {
+    background-image: url(fonas.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+.turinys {
+    background: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    max-width: 650px;
+    padding: 5px 0;
+}
+
+.turinys h1 {
+    font-family: 'Gloria Hallelujah', cursive;
+    color: black;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 79.20px;
+    word-wrap: break-word;
+}
+
+.turinys p {
+    color: #000;
+    font-family: 'Inter', cursive;
+    font-size: 20px;
+    font-weight: 400;
+    word-wrap: break-word;
+}
