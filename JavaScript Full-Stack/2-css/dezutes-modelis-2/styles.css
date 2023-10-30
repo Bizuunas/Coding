@@ -1,0 +1,69 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+body {
+    background: royalblue;
+}
+
+.blokas {
+    margin: 50px auto;
+}
+
+/* PIRMAS BLOKAS */
+
+#pirmas {
+    border: 2px solid black;
+    width: 250px;
+}
+
+#pirmas .virsus {
+    background: #222;
+    padding: 20px 40px;
+}
+
+#pirmas .apacia {
+    background: white;
+    padding: 30px 40px;
+}
+
+#pirmas .virsus h2 {
+    color: white;
+}
+
+#pirmas h2,
+#pirmas p {
+    margin: 0;
+}
+
+/* ANTRAS BLOKAS */
+
+a {
+    margin: 10px 0 0 0;
+    padding: 10px;
+    background: black;
+    color: red;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s all;
+}
+
+a:hover {
+    background: yellow;
+    color: black;
+}
+
+#antras {
+    width: 300px;
+    background: white;
+    padding: 30px;
+}
+
+#antras h2{
+    margin: 0;
+}
+
+#antras p{
+    margin: 20px 0;
+}
