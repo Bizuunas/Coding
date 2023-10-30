@@ -5,16 +5,22 @@
     box-sizing: border-box;
 }
 
-.secondary-text {
-    color: white;
-    font-family: "Helvetica Neue";
+.header {
+    background: wheat;
+    width: 100vw;
+    height: 120px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
+
 .main-background {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-size: cover url("fotkes/PirmasLapas10.JPG");
+    background-position: center;
+    background-size: cover;
+    background-image: url(fotkes/PirmasLapas10.JPG);
+    width: 100vw;
+    height: 80vh;
 }
 
 .separator::after {
@@ -51,46 +57,12 @@
     font-size: 12px;
 }
 
-
-
-
-
-/* .centered2 {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 50px;
+.secondary-text {
+    color: white;
     font-family: "Helvetica Neue";
-    letter-spacing: 2px;
-} */
-
-/* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-direction: ltr;
-text-align: center;
-box-sizing: border-box;
-z-index: 10;
-margin: 0;
-letter-spacing: 1px;
-text-shadow: 1px 1px 3px rgba(0,0,0,.3);
-font-weight: 300;
-font-size: 16px;
-line-height: 24px;
-padding: 15px 0;
-color: #ffffff; */
-
-/* .menu {
-    position: absolute;
-    top: 170%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-size: 25px;
-    text-emphasis-position: auto;
-} */
+}
 
 li {
-    position: absolute;
     text-align: left;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -103,48 +75,14 @@ li {
 
 .secondary-background {
     width: 100%;
+    height: 1000px;
     color: #fff;
-    position: auto;
     background: linear-gradient(45deg, #6f6a52d0, #966e33bd);
-    padding: 100px 0px;
-    background-position: 50%;
 }
-
-/* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-color: #000000;
-line-height: 1.68;
-font-size: 16px;
-box-sizing: border-box;
-background-attachment: scroll!important;
-background-position: center!important;
-display: flex;
-flex-wrap: nowrap;
-justify-content: space-between;
-align-items: flex-start;
-flex-direction: column;
-border-bottom: 1px solid rgb(214, 80, 80);
-padding: 100px 0px; */
-
-
-/* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-color: #000000;
-line-height: 1.68;
-font-size: 16px;
-text-align: left;
-box-sizing: border-box; */
-
-/* .subtitle{
-    background-color: #dd9819;
-    bottom: 100px;
-    width: 100px;
-    height: 1px;
-    text-align: center;
-
-} */
 
 h2 {
     background-color: #dd9819;
     width: 100px;
     height: 2px;
-
+    text-align: center;
 }

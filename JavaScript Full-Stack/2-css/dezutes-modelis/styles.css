@@ -1,0 +1,44 @@
+body{
+    background: skyblue;
+}
+
+div {
+    background: white;
+    width: 50%;
+    margin:  50px auto;
+}
+
+#blokas1 {
+    padding: 20px;
+    border: 5px solid black;
+}
+
+#blokas2 {
+    padding: 40px 0px 0px 30px;
+    border-left: 2px solid orange;
+    box-shadow: 20px 20px 15px black;
+}
+
+#blokas3 {
+    padding: 50px 20px 60px 30px;
+    border-top: 4px dashed purple;
+    border-right: 3px dotted royalblue;
+    border-bottom: 5px double red;
+    border-bottom-left-radius: 30px;
+}
+
+#blokas4 {
+    padding: 50px 60px;
+    border: 5px solid burlywood;
+    border-radius: 20px 40px;
+    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
+}
+
+#blokas5 {
+    padding: 20px 40px 30px 20px;
+    border-radius: 20px;
+}
+
+#blokas5:hover{
+    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
+}
