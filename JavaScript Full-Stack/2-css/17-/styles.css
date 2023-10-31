@@ -1,0 +1,143 @@
+body {
+    width: 1920px;
+    height: 2385px;
+    position: relative;
+    background-image: url(img/fonas.jpg);
+    object-fit: cover;
+    background-size: contain;
+    margin: 0;
+}
+
+#paddings {
+    padding: 90px 0 0 35px;
+}
+
+.white-layer {
+    background: rgba(255, 255, 255, 0.5);
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+}
+
+#img1 {
+    width: 602px;
+    height: 430px;
+    flex-shrink: 0;
+    border-radius: 95px 51px 179px 60px;
+    background-size: contain;
+    object-fit: cover;
+}
+
+#first-line {
+    color: #000;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+hr {
+    border: 1px double black;
+    margin: 2px;
+    width: 1211px
+}
+
+h1 {
+    color: #000;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 764px;
+}
+
+#first-P {
+    display: inline-flex;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 17px;
+    background: rgba(255, 255, 255, 0.45);
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    width: 770px;
+    margin-top: 0;
+}
+
+#author {
+    color: #0F4380;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#second-line {
+    border: 3px solid #540F80;
+}
+
+#second-P {
+    display: flex;
+    width: 723px;
+    padding: 60px 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    border-radius: 25px;
+    background: #540F80;
+    margin-top: 20px;
+}
+
+#second-P p {
+    margin: 0;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#img2 {
+    width: 645px;
+    height: 432px;
+    flex-shrink: 0;
+    border-radius: 0px 69px 0px 199px;
+}
+
+h3 {
+    color: #01FCB6;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+    width: 721px;
+}
+
+#third-P p {
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 721px;
+}
+
+a {
+    width: 504px;
+    height: 27px;
+    flex-shrink: 0;
+    background: #01FCB6;
+    color: #000;
+}
