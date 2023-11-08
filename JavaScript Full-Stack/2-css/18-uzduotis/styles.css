@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(img/fonas.png), rgba(216, 214, 214, 0.5);
+    width: 100%;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ==================
+    HEADER BLOKAS
+================== */
+
+.header {
+    display: flex;
+    width: 100%;
+    padding: 16px 160px;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+    color: white;
+}
+
+.icon {
+    width: 60px;
+    height: 56px;
+    flex-shrink: 0;
+    stroke-width: 2px;
+    stroke: var(--Outline, #FFF);
+}
+
+.header h3 {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    font-variant: all-small-caps;
+    letter-spacing: 1.9px;
+}
+
+/* ==================
+    PRODUKTŲ BLOKAS
+================== */
+
+.products {
+    width: 1120px;
+    height: 728px;
+    flex-shrink: 0;
+    background: #000;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    justify-self: center;
+    align-self: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.products h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 5.12px;
+    margin-top: 56px;
+    margin-bottom: 16px;
+}
+
+.products p {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.6px;
+}
+
+/* ================
+KORTELIŲ BLOKAS
+================ */
+
+.korteles {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 0 0 0;
+}
+
+.ledai {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 293px;
+    height: 440px;
+    flex-shrink: 0;
+    border: 3px solid #FFF;
+    color: #FFF;
+}
+
+.ledai h3 {
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    font-variant: all-small-caps;
+    letter-spacing: 0.96px;
+}
+
+.separator {
+    content: "";
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    width: 23px;
+    height: 3px;
+    background: #FFF;
+    margin: 10px 0 15px 0;
+}
+
+img {
+    border-radius: 127px;
+    background: url(img/VanillaLedai.jpg);
+    object-fit: cover;
+    width: 127px;
+    height: 127px;
+    flex-shrink: 0;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 35px;
+}
+
+.ledai p {
+    width: 250px;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0.54px;
+    word-wrap: break-word;
+}
+
+.ledai a {
+    width: 159px;
+    height: 50px;
+    color: #9661E8;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    font-variant: all-small-caps;
+    letter-spacing: 1.52px;
+    text-decoration: none;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.ledai a:hover {
+    border: 1px solid #9661E8;
+}
+
+/* ===================
+FOOTER BLOKAS
+=================== */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    width: 100%;
+    gap: 8px;
+    padding: 16px 8px;
+    margin-top: 81px;
+}
+
+.footer p {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}

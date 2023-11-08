@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* ===============================
+            HEADER BLOKAS
+=============================== */
+
+.background1 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), url(img/header.jpg), lightgray 0px -915.438px / 100% 580.343% no-repeat;
+    width: 100%;
+    height: 372px;
+
+}
+
+.header {
+    display: flex;
+    padding: 24px 80px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.navbar h3 {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    font-variant: all-small-caps;
+    letter-spacing: 1.9px;
+}
+
+.contactus {
+    border-radius: 8px;
+    background: #E12E60;
+    display: flex;
+    padding: 8px 16px;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+h1 {
+    margin: 88px 0 0 58px;
+    width: 856px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* ===============================
+            PIRMAS BLOKAS
+=============================== */
+
+.pirmas-blokas {
+    display: flex;
+    width: 100%;
+    padding: 50px;
+    padding: 78px 59px 79px 60px;
+    justify-content: center;
+    align-items: center;
+    background: #EF5D69;
+}
+
+.tekstukas {
+    display: flex;
+    padding: 60px 40px;
+    align-items: flex-start;
+    gap: 60px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.80);
+}
+
+.tekstukas p {
+    width: 450px;
+    color: #000;
+    font-family: Roboto;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* ===============================
+            ANTRAS BLOKAS
+=============================== */
+
+.antras-blokas {
+    display: flex;
+    width: 100%;
+    padding: 130px 60px 130px 40px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 40px;
+    background: #FCDFE1;
+}
+
+.nuotrauka1 {
+    border-radius: 8px;
+    background: url(img/foto.jpg);
+    width: 60%;
+    height: 614px;
+    flex-shrink: 0;
+}
+
+.remas {
+    display: flex;
+    width: 30%;
+    padding: 29px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #FFF;
+}
+
+.tekstas {
+    display: flex;
+    width: 399px;
+    padding: 25px 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.tekstas p {
+    color: #000;
+    font-family: Roboto;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* ===============================
+            FOOTER BLOKAS
+=============================== */
+
+.footer {
+    background: #000;
+    width: 100%;
+    display: flex;
+    padding: 16px 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer h3 {
+    color: white;
+}
+
+.icon-background {
+    border-radius: 30px;
+    background: #FCDFE1;
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons img {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.icons {
+    width: 350px;
+    height: 45.992px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
