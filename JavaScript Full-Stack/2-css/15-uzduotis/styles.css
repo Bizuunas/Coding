@@ -1,0 +1,64 @@
+* {
+    margin: 0px;
+}
+
+p {
+    width: 250px;
+    background: white;
+}
+
+div {
+    padding: 20px;
+    height: 400px;
+}
+
+/* ==============================
+           PIRMA EILĖ
+============================== */
+
+.pirmaEile {
+    background: orange;
+    display: flex;
+}
+
+/* ==============================
+           ANTRA EILĖ
+============================== */
+
+.antraEile {
+    display: flex;
+    justify-content: end;
+    background: gold;
+}
+
+/* ==============================
+           TRECIA EILĖ
+============================== */
+
+.treciaEile {
+    display: flex;
+    align-items: center;
+    background: orangered;
+}
+
+/* ==============================
+           KETVIRTA EILĖ
+============================== */
+
+.ketvirtaEile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: skyblue;
+}
+
+/* ==============================
+           PENKTA EILĖ
+============================== */
+
+.penktaEile {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    background: red;
+}

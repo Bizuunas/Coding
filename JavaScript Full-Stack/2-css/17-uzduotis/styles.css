@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ======================
+        HEADER DALIS
+====================== */
+
+h2 {
+    color: white;
+}
+
+.eile {
+    display: flex;
+    height: 80px;
+}
+
+ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 15px;
+}
+
+#virsus {
+    background: #222;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+}
+
+#virsus a {
+    text-decoration: none;
+    color: white;
+}
+
+#virsus ul a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+/* ====================
+        TITLE DALIS
+==================== */
+
+
+.title {
+    background: rgb(53, 187, 53);
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titleBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    row-gap: 20px;
+}
+
+.button {
+    display: flex;
+}
+
+.button a {
+    margin: 0 5px;
+    padding: 10px 20px;
+    background: rgb(53, 187, 53);
+    color: white;
+    text-decoration: none;
+    border: 2px solid #222;
+}
+
+.button a:hover {
+    background: #222;
+}
+
+/* ===============
+TREČIAS BLOKAS
+=============== */
+
+.treciasBlokas {
+    background: royalblue;
+    padding: 30px 20px;
+}
+
+/* ==================
+STRAIPSNIŲ BLOKAS
+================== */
+
+.straipsniai {
+    padding: 20px 00px;
+    background: rgb(216, 169, 129);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 10px;
+    justify-content: space-evenly;
+}
+
+.straipsnis {
+    display: flex;
+    flex-direction: column;
+    background: rgb(247, 222, 169);
+    width: 30%;
+    gap: 15px;
+    justify-content: space-evenly;
+    padding: 15px 10px;
+    min-height: 200px;
+}
+
+/* ==================
+FOOTER BLOKAS
+================== */
+
+.footer1 {
+    background: #222;
+    display: flex;
+    color: white;
+    max-height: 150px;
+    padding: 40px 15px;
+}
+
+.footer1 p {
+    max-width: 30%;
+    justify-self: center;
+    align-items: center;
+}
+
+.info h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.info {
+    margin: 0 100px 200px;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.navbar ul li a {
+    color: white;
+    list-style-type: circle;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}

@@ -1,0 +1,63 @@
+body {
+    background: orange;
+}
+
+/* ==============================
+           PIRMA EILĖ
+============================== */
+
+
+.pirmaEile {
+    display: flex;
+}
+
+/* ==============================
+           ANTRA EILĖ
+============================= */
+
+.antraEile {
+    display: flex;
+    justify-content: center;
+    background: orangered;
+}
+
+.antraEile p {
+    background: white;
+    margin: 20px;
+}
+
+/* ==============================
+           TREČIA EILĖ
+============================= */
+
+.treciaEile {
+    display: flex;
+    justify-content: center;
+    background: orange;
+    padding: 20px 50px;
+}
+
+.treciaEile p {
+    background: white;
+    padding: 20px;
+    width: 600px;
+}
+
+/* ==============================
+           KETVIRTA EILĖ
+============================= */
+
+.ketvirtaEile {
+    background: orangered;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    gap: 30px;
+    margin: 10px;
+}
+
+.ketvirtaEile p {
+    background: orange;
+    padding: 20px 50px;
+    width: 400px;
+}
