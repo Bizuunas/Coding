@@ -3,3 +3,119 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background: #D4F1E6;
+
+}
+
+h1 {
+    margin: 121px auto;
+    width: 1121px;
+    height: 172px;
+    color: #1F1F1F;
+    font-family: Montserrat;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%;
+}
+
+/* ===============================
+            NUOTRAUKŲ BLOKAS
+=============================== */
+
+.nuotraukos {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    width: 1140px;
+    gap: 40px 43.2px;
+}
+
+.nuotraukos img {
+    border-radius: 62.897px;
+    object-fit: cover;
+}
+
+#img1 {
+    width: 428.483px;
+    height: 456px;
+    flex-shrink: 0;
+}
+
+#img2 {
+    width: 668.276px;
+    height: 448.138px;
+    flex-shrink: 0;
+}
+
+#img3 {
+    width: 680.069px;
+    height: 456px;
+    flex-shrink: 0;
+}
+
+#img4 {
+    width: 412.759px;
+    height: 456px;
+    flex-shrink: 0;
+}
+
+/* ===============================
+            STRAIPSNIO BLOKAS
+=============================== */
+
+.straipsnis {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 1136px;
+    padding: 55px 0px;
+    border-radius: 24px;
+    background: #FFF;
+    column-gap: 73px;
+    margin: 121px auto;
+}
+
+.tekstas {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.tekstas h2 {
+    color: #1F1F1F;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    width: 600px;
+}
+
+.tekstas p {
+    display: flex;
+    width: 600px;
+    color: #1F1F1F;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.straipsnis img {
+    align-self: flex-end;
+    justify-self: flex-start;
+    object-fit: cover;
+    width: 342px;
+    height: 532px;
+    flex-shrink: 0;
+    border-radius: 24px;
+}
