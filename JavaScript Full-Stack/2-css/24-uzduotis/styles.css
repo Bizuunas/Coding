@@ -8,9 +8,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 90px 0px 0px 0px;
+    flex-direction: column;
     gap: 32px;
+    margin: 50px auto;
 }
+
 
 .kortele {
     display: flex;
@@ -20,14 +22,96 @@
     align-items: center;
     box-shadow: 0px 2px 4px 0px rgba(96, 97, 112, 0.16), 0px 0px 1px 0px rgba(40, 41, 61, 0.04);
     border-radius: 12px;
-    background: var(--white-fill, #FFF);
 }
 
-.kortele img {
+.img {
+    height: 205px;
+}
+
+.kortele .img img {
     width: 276px;
     height: 176px;
     flex-shrink: 0;
     object-fit: cover;
     border-radius: 12px 12px 0 0;
+    position: relative;
+}
 
+.img .data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    bottom: 35px;
+    left: 205px;
+    background: #FFF;
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 15px;
+    box-shadow: 0px 1px 4px 0px rgba(96, 97, 112, 0.16), 0px 1px 1px 0px rgba(40, 41, 61, 0.04);
+}
+
+.data .skaicius {
+    color: var(--black-700-black, #121212);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.data .menuo {
+    color: var(--black-700-black, #121212);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+}
+
+.tekstas {
+    display: flex;
+    padding: 0px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.tekstas h6 {
+    color: var(--black-400-gray, #959393);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+}
+
+.tekstas p {
+    color: var(--black-700-black, #121212);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.iconos {
+    width: 100%;
+}
+
+.iconos img {
+    border: 1px solid grey;
+    border-radius: 50%;
+    padding: 8px;
+    width: 40px;
+    margin: 0 10px 0 0 ;
 }
