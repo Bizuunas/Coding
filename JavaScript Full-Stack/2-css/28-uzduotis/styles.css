@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    display: flex;
+    flex-direction: column;
+    jus
+} */
+
+img {
+    width: 100%;
+    height: 50vh;
+    flex-shrink: 0;
+    object-fit: cover;
+    overflow: auto;
+    margin: 0 0 -5px 0;
+}
+
+.header {
+    position: sticky;
+    display: flex;
+    width: 100%;
+    padding: 15px 510px 15px 133px;
+    align-items: center;
+    background: linear-gradient(180deg, #AFBACB 0%, rgba(175, 186, 203, 0.00) 110.33%), #FFF;
+}
+
+.tekstas {
+    margin: 55px 0 50px 0;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tekstas p {
+    width: 464px;
+    color: #000;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0.42px;
+}
