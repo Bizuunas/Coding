@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.frame {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 82px 160px 54px 140px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: #FFF;
+}
+
+.frame h1 {
+    width: 737px;
+    height: 162px;
+    color: #000;
+    font-family: Poppins;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.korteles {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.kortele {
+    display: flex;
+    width: 376px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 1px solid #84AD40;
+    background: #FFF;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.15);
+    object-fit: cover;
+}
+
+.kortele .Main-img {
+    height: 431px;
+    align-self: stretch;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+}
+
+.turinys {
+    display: flex;
+    padding: 16px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+}
+
+.kortele h3 {
+    color: #000;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.kortele p {
+    color: #777;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.interakcija {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.interakcija button {
+    border-radius: 4px;
+    background: white;
+    color: #84AD40;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: flex;
+    padding: 12px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #84AD40;
+}
+
+.vazono-spalva p {
+    color: #7D9458;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.vazono-spalva img {
+    width: 79px;
+    height: 16px;
+    flex-shrink: 0;
+    border-radius: 0;
+}
+
+.vazono-spalva {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.kortele:hover button {
+    background: #84AD40;
+    color: white;
+}
