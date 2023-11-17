@@ -1,0 +1,434 @@
+.justify-content-end {
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-end !important;
+}
+
+.navbar-brand {
+    color: #878B9B;
+    font-family: Roboto Condensed;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.hover:hover {
+    color: #43C45F !important;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.hover {
+    color: #404445 !important;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.background {
+    background-image: url(img/header.jpg);
+    background-attachment: fixed;
+    height: 730px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.my-5 {
+    margin-top: 0 !important;
+}
+
+.text-body-emphasis {
+    color: #FFF !important;
+    text-align: center;
+    font-family: Roboto !important;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 500 !important;
+    line-height: normal;
+}
+
+.a p {
+    width: 681px;
+    color: #D5D7D8;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.btn {
+    border-radius: 5px;
+    background: #43C45F;
+    border: none;
+}
+
+.margin-bottom {
+    margin-bottom: 60px;
+}
+
+.text-black {
+    color: #404445;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.under-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 575px;
+    width: 100%;
+}
+
+#icons {
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+}
+
+.text-body-emphasis p {
+    color: #5F6B81;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 127.188%;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: 880px;
+    background: #F1F8FF;
+}
+
+.video p {
+    width: 648px;
+    text-align: center;
+    color: #5F6B81;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 127.188%;
+}
+
+.video h3 {
+    color: #404445;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#play-btn img {
+    position: relative;
+    right: 30px;
+    top: 230px;
+}
+
+#play-btn {
+    height: 0;
+    width: 0;
+}
+
+.statistika {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 0 0 0;
+    height: 663px;
+    width: 100%;
+    gap: 35px;
+}
+
+.statistika h3 {
+    color: #404445;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 127.188%;
+}
+
+.text-statistika p {
+    color: #404445;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 127.188%;
+    width: 672px;
+}
+
+.text-statistika {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.line {
+    width: 1320px;
+    height: 2px;
+    background: #D8D8D8;
+}
+
+.all-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 170px;
+}
+
+.data {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+    width: 200px;
+    height: auto;
+}
+
+.data h3 {
+    margin: 0;
+}
+
+.data p {
+    color: #5F6B81;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 127.188%;
+}
+
+.darbu-galerija {
+    background: #F1F8FF;
+    width: 100%;
+    height: 835px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pavadinimas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.pavadinimas h3 {
+    color: #404445;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.pavadinimas p {
+    color: #5F6B81;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 127.188%;
+    width: 648px;
+}
+
+.projektai {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.projektas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.projektas img {
+    width: 424px;
+    height: 262px;
+    flex-shrink: 0;
+}
+
+.projektas p {
+    width: 424px;
+    color: #5F6B81;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.projektas h3 {
+    color: #404445;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.prenumerata {
+    background: #5F6B81;
+    width: 100%;
+    height: 490px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.prenumerata h3 {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.prenumerata p {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 127.188%;
+    width: 648px;
+}
+
+.prenumerata form input {
+    border-radius: 5px 0px 0px 5px;
+    background: #FFF;
+    width: 361px;
+    height: 64px;
+    flex-shrink: 0;
+    color: #D8D8D8;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 127.188%;
+    border: none;
+}
+
+.prenumerata form button {
+    width: 179px;
+    height: 64px;
+    flex-shrink: 0;
+    border-radius: 0px 5px 5px 0px;
+    background: #43C45F;
+    border: none;
+    margin: -5px;
+}
+
+.komanda {
+    width: 100%;
+    height: 905px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-direction: column;
+}
+
+.komanda h3 {
+    color: #404445;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.komanda p {
+    width: 648px;
+    color: #5F6B81;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 127.188%;
+}
+
+.nariai {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.narys {
+    height: 495px;
+    width: 315px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.po-nariu {
+    border-radius: ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 312px;
+    height: 102px;
+    background: #EEEEEE;
+}
+
+.narys h4 {
+    color: #404445;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
