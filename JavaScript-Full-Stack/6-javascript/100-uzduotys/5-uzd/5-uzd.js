@@ -1,0 +1,1 @@
+console.log('pirma teksto eilute \nantra teksto eilute \ntrecia teksto eilute')
