@@ -413,7 +413,7 @@
 }
 
 .po-nariu {
-    border-radius: ;
+    border-radius: 0 0 15px 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -431,4 +431,226 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+.separator:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #D8D8D8;
+}
+
+.susisiekti {
+    width: 100%;
+    height: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.susisiekti h3 {
+    color: #404445;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.susisiekti p {
+    width: 648px;
+    color: #5F6B81;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 127.188%;
+}
+
+.susisiekti a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 191px;
+    height: 47px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #43C45F;
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    background: #2F323B;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 136px;
+    padding: 70px 0 0 0;
+}
+
+.nica-reklama {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.nica-reklama h3 {
+    color: #FFF;
+    font-family: Roboto Condensed;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+}
+
+.nica-reklama p {
+    width: 200px;
+    color: #7A7C88;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 137.188%;
+}
+
+.kontaktai {
+    width: 199px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.kontaktai p {
+    margin: 0px;
+    color: #7A7C88;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 137.188%;
+}
+
+.kontaktai h3 {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.straipsniai {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.straipsnis {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.straipsnis:after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 1px;
+    background: #707070;
+    margin: -10px 0 13px 0;
+}
+
+.straipsniai h3 {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.straipsnis p {
+    color: #98A3B5;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 36px;
+}
+
+nav h3 {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+nav h3::after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 1px;
+    background: #707070;
+    margin: 13px 0 0 0;
+}
+
+nav h4 {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.copyrights {
+    width: 100%;
+    height: 70px;
+    background: #2A2D36;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 0 0 300px;
+}
+
+.copyrights p {
+    margin: 0;
+    padding: 0;
+    color: #7A7C88;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 137.188%;
 }

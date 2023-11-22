@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background: #222;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .brand {
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    a {
+        color: #f8f8f8;
+        text-decoration: none;
+        transition: 0.2s all;
+
+        &:hover {
+            color: orange;
+        }
+    }
+
+    ul.links {
+
+        .link {
+            display: inline-block;
+            list-style-type: none;
+            margin-left: 20px;
+        }
+    }
+}
+
+header {
+    height: 400px;
+    background: darkcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .content {
+        max-width: 400px;
+
+        h1 {
+            text-transform: uppercase;
+            padding: 20px;
+        }
+
+        p {
+            padding: 0 0 20px 0;
+        }
+
+        .buttons {
+            .btn {
+                // background: red;
+                text-decoration: none;
+                padding: 10px 15px;
+                display: inline-block;
+                transition: 0.3s all;
+
+                &.btn-primary {
+                    background: green;
+                    color: white;
+
+                    &:hover {
+                        background: white;
+                        color: green;
+                    }
+                }
+
+
+                &.btn-secondary {
+                    background: white;
+                    color: green;
+
+                    &:hover {
+                        background: green;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    background: #f8f8f8;
+    padding: 30px;
+    gap: 20px;
+
+    article {
+        width: calc((100% - 2 * 20px) / 3);
+        background: white;
+        padding: 25px;
+        box-sizing: border-box;
+
+        @media only screen and (max-width: 800px) {
+            width: calc((100% - 2 * 20px) / 2);
+        }
+
+        @media only screen and (max-width: 450px) {
+            width: 100%;
+        }
+    }
+}
+
+// css:
+// .button {}
+// .button:hover {}
+
+// sass:
+// .button {
+//     &:hover {}
+// }
+
+// css:
+// .blokas:hover .mygtukas {}
+
+// sass:
+// .blokas {
+//     &:hover {
+//         .mygtukas {}
+//     }
+// }
+
+// .blokas {
+//     &:hover .mygtukas {
+//     }
+// }
+
+// css:
+// .blokas {}
+// @media only screen and (max-width: 500px) {
+//     .blokas {}
+// }
+
+// sass:
+// .blokas {
+//     @media only screen and (max-width: 500px) {
+//     }
+// }
