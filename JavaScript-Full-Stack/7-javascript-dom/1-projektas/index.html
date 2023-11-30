@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700&family=Source+Sans+3:wght@400;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Kepykla</title>
+</head>
+
+<body>
+
+    <header class="block-wrapper">
+        <h1>Kepykla</h1>
+    </header>
+
+    <div class="info-wrapper block-wrapper">
+        <h2>Pradinė informacija</h2>
+        <div class="input-wrapper">
+            <label for="employees-count">Darbuotojų skaičius:</label>
+            <input id="employees-count" type="number" min="0" step="1" value="0">
+            <span class="error">Darbuotojų skaičius negali būti neigiamas</span>
+
+        </div>
+        <div class="input-wrapper">
+            <label for="employee-makes-per-day">Vieno darbuotojo duonos kepalų pagaminimo skaičius per dieną:</label>
+            <input id="employee-makes-per-day" type="number" min="0" step="1" value="0">
+            <span class="error">Vieno darbuotojo duonos kepalų pagaminimo skaičius per dieną negali būti neigiamas</span>
+        </div>
+        <div class="input-wrapper">
+            <label for="day-reservations">Kiek užsakymu turi būti įgyvendinta:</label>
+            <input id="day-reservations" type="number" min="0" step="1" value="0">
+            <span class="error">Skaičius kiek užsakymu turi būti įgyvendinta negali būti neigiamas</span>
+        </div>
+        <button id="calculate">Skaičiuoti</button>
+        <button id="reset">Viską išvalyti</button>
+    </div>
+
+    <div class="calculation-wraper block-wrapper">
+        <h2>Skaičiavimai</h2>
+        <div id="results">
+            <p>Kol kas nieko nėra.</p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
