@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    background: #f8f8f8;
+}
+
+.header-header {
+    width: 100%;
+    height: 44px;
+    background: #31685d;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    font-family: Poppins, sans-serif;
+}
+
+.header {
+    background: darkgreen;
+    width: 100%;
+    height: 145px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    background: url(img/lenpjuves-background.jpg);
+}
+
+.header img {
+    width: 240px;
+}
+
+.header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 20px;
+    margin: 0 50px;
+}
+
+.header ul {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 18px;
+}
+
+.skaiciuokle {
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.h1 {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.skaiciuokle {
+    margin: 10px 500px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.btn {
+    display: inline;
+    width: 50%;
+    padding: 15px;
+    border-radius: 0;
+    border: 1px solid #31685d;
+    font-size: 18px;
+    text-transform: uppercase;
+}
