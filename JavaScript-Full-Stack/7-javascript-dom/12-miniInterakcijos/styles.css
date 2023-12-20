@@ -1,0 +1,81 @@
+body {
+    background: bisque;
+}
+
+body > div {
+    background: white;
+    padding: 2em;
+    margin: 5em;
+}
+
+textarea {
+    width: 100%;
+}
+
+#keturioliktas textarea {
+    background: #ececec;
+    border: 1px solid #bebebe;
+}
+
+#tryliktas .parametrai {
+    display: flex;
+    margin: 0 0 2em 0;
+}
+
+#tryliktas .parametrai .parametras {
+    width: 20%;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#tryliktas #div-keitimui {
+    width: 100px;
+    height: 100px;
+    background: burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#sesioliktas .skirtukas {
+    border: 1px dotted grey;
+    padding: 1em;
+}
+
+#sesioliktas .skirtukas#antras-skirtukas {
+    display: none;
+}
+
+#septynioliktas #perjungti-tekstas {
+    display: none;
+}
+
+#astuonioliktas #kitas-perjungti-tekstas {
+    display: none;
+}
+
+#dvidesimtas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#dvidesimtPirmas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#dvidesimtPirmas #skaicius1, #skaicius2 {
+    margin: 10px 20px;
+    max-width: 5%;
+    max-height: 15px;
+}
+
+#langelis {
+    display: none;
+}
