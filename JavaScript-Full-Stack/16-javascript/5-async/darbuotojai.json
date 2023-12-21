@@ -1,0 +1,14 @@
+[
+    {
+        "vardas": "Tomas",
+        "pavarde": "Tomauskas",
+        "etatas": 1,
+        "atlyginimas": 1000
+    },
+    {
+        "vardas": "Petras",
+        "pavarde": "Petrauskas",
+        "etatas": 0.75,
+        "atlyginimas": 780
+    }
+]

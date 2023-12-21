@@ -1,0 +1,14 @@
+[
+    {
+        "pavadinimas": "Batu parduotuves sistema",
+        "kaina": 20000,
+        "aprasymas": "Sistema skirta batu parduotuvei",
+        "ar_igyvendintas": false
+    },
+    {
+        "pavadinimas": "Siuntu integracija i vaistines sistema",
+        "kaina": 3000,
+        "aprasymas": "Sistema skirta siuntu integracijai i vaistines sistema",
+        "ar_igyvendintas": true
+    }
+]
