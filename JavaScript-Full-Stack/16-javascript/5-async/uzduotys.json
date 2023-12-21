@@ -2,13 +2,13 @@
     {
         "uzduotis": "Patalpinti projekta",
         "terminas": "2020-12-31",
-        "prioritetas": "aukstas",
+        "prioritetas": "Aukstas",
         "ar_baigta": true
     },
     {
         "uzduotis": "Surasyti reikalavimu specifikacija",
         "terminas": "2024-01-10",
-        "prioritetas": "aukstas",
+        "prioritetas": "Aukstas",
         "ar_baigta": false
     }
 ]
