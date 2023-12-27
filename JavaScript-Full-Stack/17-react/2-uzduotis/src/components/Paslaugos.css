@@ -1,0 +1,26 @@
+.paslauga .paslaugu-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.paslaugos-blokelis {
+    width: calc(50% - 10px);
+}
+
+.paslauga {
+    width: 100%;
+    background: rgba(255, 0, 0, 0.5);
+    border-radius: 50px;
+}
+
+.paskutine-paslauga {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    background: rgba(65, 105, 225, 0.5);
+    border-radius: 50px;
+}
