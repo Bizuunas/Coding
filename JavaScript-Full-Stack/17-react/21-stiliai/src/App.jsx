@@ -3,6 +3,7 @@ import Antras from './components/Antras/Antras'
 import Ketvirtas from './components/Ketvirtas'
 import Pirmas from './components/Pirmas'
 import Trecias from './components/Trecias'
+import Penktas from './components/Penktas'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Antras />
       <Trecias />
       <Ketvirtas />
+      <Penktas />
     </>
   )
 }

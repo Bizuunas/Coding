@@ -1,0 +1,37 @@
+.penktas-blokas {
+    background: bisque;
+    padding: 30px;
+}
+
+.penktas-blokas button {
+    padding: 10px 20px;
+    border-color: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.penktas-blokas .skaicius {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.penktas-blokas .zinute {
+    padding: 10px;
+    border: 1px solid transparent;
+}
+
+.penktas-blokas .zinute.zinute-zalia {
+    background: lightgreen;
+    border-color: green;
+}
+
+.penktas-blokas .zinute.zinute-geltona {
+    background: yellow;
+    border-color: orange;
+}
+
+.penktas-blokas .zinute.zinute-raudona {
+    background: red;
+    border-color: darkred;
+    color: white;
+}
