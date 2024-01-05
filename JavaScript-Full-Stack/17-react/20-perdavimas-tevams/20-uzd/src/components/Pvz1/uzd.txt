@@ -1,0 +1,4 @@
+Į aplanką Pvz1 susikurkite komponentus
+"Skaiciai" (tėvinis) ir "RinktisNauja" (vaikinis)
+
+Pakartoti tą patį kas yra "Pasirinkimas" ir "Mygtukai"
