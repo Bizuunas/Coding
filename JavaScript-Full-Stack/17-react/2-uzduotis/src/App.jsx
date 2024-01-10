@@ -1,22 +1,15 @@
 import './App.css'
-import Tekstas from './components/Tekstas';
-import Pirkiniai from './components/Pirkiniai';
-import Header from './components/Header';
-import Paslaugos from './components/Paslaugos';
-import Paslauga from './components/Paslauga';
-
+import NavBar from './components/NavBar'
+import Header from './components/Header'
+import Services from './components/Services'
 
 
 function App() {
   return (
     <>
+      <NavBar />
       <Header />
-      <Tekstas />
-      <Pirkiniai />
-      <Paslaugos />
-      <div className="paskutine-paslauga">
-      <Paslauga />
-      </div>
+      <Services />
     </>
   )
 }

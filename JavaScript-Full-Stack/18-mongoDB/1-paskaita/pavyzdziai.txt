@@ -1,0 +1,45 @@
+naudojam duomenų bazę:
+    use companies_db
+
+imam viską iš employees kolekcijos:
+    db.employees.find()
+
+db.employees.find({age: 25})
+
+db.employees.find({country: 'Lithuania'})
+
+db.employees.find({email: /epa.gov/})
+
+db.employees.find({job_title: 'Tax Accountant'})
+
+db.employees.find({gender:'Genderqueer'})
+
+db.employees.find({age: 30, gender: 'Female'})
+
+db.employees.find({job_title: 'Information Systems Manager'})
+
+db.employees.find({job_title: 'Information Systems Manager', gender: 'Male'})
+
+db.employees.find({job_title: /.*Programmer.*/i})
+
+db.employees.find({age: {$lt: 35}})
+
+db.employees.find({age: {$lte: 20}})
+
+gte lte gt lt
+
+// amžius daugiau nei 60
+db.employees.find({ age: {$gt: 60} })
+
+// amžius mažiau nei 20
+db.employees.find({ age: {$lt: 20} })
+
+// amžius daugiau arba lygu 63
+db.employees.find({ age: {$gte: 63} })
+
+// amžius mažiau arba lygu 19
+db.employees.find({ age: {$lte: 19} })
+
+db.employees.find({age: {$gte: 22, $lte: 28}})
+
+db.employees.find({age: {$gte: 22, $lte: 28}, gender: 'Female'})
