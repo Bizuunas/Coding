@@ -1,0 +1,21 @@
+use to-do
+
+db.todos.insertOne({title: 'nauja uzduotele', completed: false})
+
+db.todos.findOne({_id: ObjectId("659f9640a52adc380eaa9db0")})
+
+db.todos.insertOne({title: 'papildoma uzduotis', completed: false, location: 'Kaunas'})
+
+db.todos.insertMany([ {title: 'pirma', completed: true}, {title: 'antra', completed: true}, {title: 'trecia', completed: false} ])
+
+db.todos.insertOne({title: 'su papildomom uzduotim', completed: false, subTasks: ['sub 1', 'sub 2']})
+
+db.todos.find({location: {$exists: true}})
+
+db.todos.insertOne({title: 'pirkiniai', completed: false, subTasks: ['batonas', 'sviestas', 'desra']})
+
+db.todos.find({'subTasks.title': 'pomidorai'})
+
+db.todos.find({subTasks: {$exists: true}})
+
+db.todos.updateOne({_id: ObjectId("659f9b16a52adc380eaa9db5")}, {$pull: {subTasks: 'sub 1'}})

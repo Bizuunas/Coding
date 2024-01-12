@@ -1,0 +1,76 @@
+1. Parašykite MongoDB užklausą, kuri surastų pirmojo dokumento nakvynės kainą, valymo mokestį, miegamųjų kiekį, svečių skaičių, adresą, host_name, host_location, host_about. Taip pat, ar host turi patvitintą tapatybę ir ar turi profilio nuotrauką. 
+
+
+2. Parašykite MongoDB užklausą, kuri surastų visus skelbimus, kur property_type yra House. 
+
+
+3. Parašykite MongoDB užklausą, kuri surastų visus skelbimus, kur nakvynės kaina yra didesnė už 500. Pateikite šiuos atributus: listing_url, name, host_name, host_location, reviewer_name, price.
+
+
+4. Parašykite MongoDB užklausą, kuri surastų visus skelbimus Brazilijoje, kurių review score yra ne mažesnis nei 9. Pateikite šiuos atributus: name, address, review_scores_rating.
+
+
+5. Parašykite MongoDB užklausą, kuri surastų visus skelbimus JAV, kurie turi amenity 'hot tub'.
+
+
+6. Parašykite MongoDB užklausą, kuri surastų visus skelbimus, kurie turi amenity 'pool', o nakvynės kaina yra tarp 200 ir 400.
+
+
+7. Parašykite MongoDB užklausą, kuri surastų visus skelbimus Kanadoje arba Meksikoje, kurie turi amenity 'washer'.
+
+
+8. Parašykite MongoDB užklausą, kuri surastų top 10 skelbimų pagal atsiliepimų kiekį. Pateikite šiuos atributus: listing_url, name, country, review_scores.
+
+
+9. Parašykite MongoDB užklausą, kuri surastų visus skelbimus, kurie turi amenity 'fireplace', o atsiliepimų reitingas ne mažesnis nei 8.
+
+
+10. Parašykite MongoDB užklausą, kuri surastų top 10 skelbimų pagal nakvynės kainą. Pateikite šiuos atributus: listing_url, name, address, amenities, price, review scores.
+
+
+11. Parašykite MongoDB užklausą, kuri surastų 10 skelbimų, turinčių žemiausią nakvynės kainą. Pateikite šiuos atributus: listing_url, name, address, amenities, price, review scores.
+
+
+12. Parašykite MongoDB užklausą, kuri surastų visus skelbimus, kurių number_of_reviews yra lygus 0. Pateikite šiuos atributus: name, address, reviewer_name, review_scores_rating.
+
+
+13. Parašykite MongoDB užklausą, kuri surastų visus skelbimus, kurių host_is_superhost yra true. Pateikite šiuos atributus: name, address, host, reviewer_name, review_scores_rating.
+
+
+14. Parašykite MongoDB užklausą, kuri surastų visus skelbimus, kurių beds atributas yra 2 ar daugiau. Pateikite šiuos atributus: name, address, host, bed_type, bed, review_scores_rating.
+
+
+15. Parašykite MongoDB užklausą, kuri surastų visus skelbimus, kurių host_name atributas turi žodį 'Livia'. Pateikite šiuos atributus: name, address, host.
+
+
+16. Parašykite MongoDB užklausą, kuri surastų visus skelbimus, kurių availability_365 atributas yra didesnis nei 300. Pateikite šiuos atributus: name, address, host, availability.
+
+
+17. Parašykite MongoDB užklausą, kuri surastų visus skelbimus, kurių amenities masyvas turi 'TV' ir 'Wifi'. Pateikite šiuos atributus: listing_url, name, amenity, host.
+
+
+18. Parašykite MongoDB užklausą, kuri surastų visus skelbimus, kurių host_total_listings_count yra didesnis už 1. Pateikite šiuos atributus: listing_url, name, host, price.
+
+
+19. Parašykite MongoDB užklausą, kuri surastų visus skelbimus, kurių property_type yra 'Apartment', o beds yra daugiau arba lygu 2. Pateikite šiuos atributus: listing_url, name, property_type, bed, price.
+
+
+20. Parašykite MongoDB užklausą, kuri surastų visus skelbimus, kurie turi ne mažiau 2 vonios kambarių. Pateikite šiuos atributus: listing_url, name, property_type, bed, bathrooms, price.
+
+
+21. Parašykite MongoDB užklausą, kuri surastų visus skelbimus, kurių kaina yra didesnė nei 500, o depozitas yra daugiau arba lygu 1000. Pateikite šiuos atributus: listing_url, name, property_type, bed, price, security_deposit.
+
+
+22. Parašykite MongoDB užklausą, kuri surastų visus skelbimus, kurių cancellation policy yra 'flexible'. Pateikite šiuos atributus: listing_url, name, property_type, bed, price, cancellation_policy.
+
+
+23. Parašykite MongoDB užklausą, kuri surastų visus skelbimus, turinčius bent po vieną atsiliepimą. Pateikite šiuos atributus: listing_url, name, address, reviews.
+
+
+24. Parašykite MongoDB užklausą, kuri surastų visus skelbimus, kurių atributo suburb yra 'Lagoa'. Pateikite šiuos atributus: listing_url, name, address.
+
+
+25. Parašykite MongoDB užklausą, kuri surastų visus skelbimus, kurių host yra superhost ir turi bent 2 skelbimus. Pateikite šiuos atributus: listing_url, name, address, host.
+
+
+26. Parašykite MongoDB užklausą, kuri surastų visus skelbimus, kurių host turi profilio nuotraukos url. Pateikite šiuos atributus: listing_url, name, address, host_picture_url.

@@ -1,0 +1,178 @@
+1. Parašykite MongoDB užklausą, kad būtų rodomi visi kolekcijos restoranai dokumentai.
+
+
+2. Parašykite MongoDB užklausą, kad būtų rodomi visų dokumentų atributai: restaurant_id, name, borough ir cuisine.
+
+
+3. Parašykite MongoDB užklausą, kad būtų rodomi visų dokumentų atributai: restaurant_id, name, borough ir cuisine, bet neįtraukite _id atributo.
+
+
+4. Parašykite MongoDB užklausą, kad būtų rodomi visų dokumentų atributai: restaurant_id, name, borough ir zip code, bet neįtraukite _id atributo.
+
+
+5. Parašykite MongoDB užklausą, kad būtų rodomi visi restoranai, esantys Bronx borough.
+
+
+6. Parašykite MongoDB užklausą, kad būtų rodomi pirmi 5 restoranai, esantys Bronx borough.
+
+
+7. Parašykite MongoDB užklausą, kad būtų rodomi sekantys 5 restoranai (praleiskite pirmuosius 5) esančius Bronx borough. (skip)
+
+
+8. Parašykite MongoDB užklausą, kad surastumėte restoranus, kurių score yra daugiau nei 90.
+
+
+9. Parašykite MongoDB užklausą, kad surastumėte restoranus, kurių score yra daugiau nei 80, bet mažiau nei 100.
+
+
+10. Parašykite MongoDB užklausą, kad surastumėte restoranus, kurių platumos reikšmė mažesnė nei -95.754168.
+
+
+11. Parašykite MongoDB užklausą, kad surastumėte restoranus, kurių cuisine nėra American, jų score yra daugiau nei 70, ir platumos reikšmė mažesnė nei -65.754168.
+
+
+12. Parašykite MongoDB užklausą, kad surastumėte restoranus, kurių cuisine nėra American, jų score yra daugiau nei 70, ir platumos reikšmė mažesnė nei -65.754168. Tačiau savo sprendime nenaudokite $and operatoriaus.
+
+
+13. Parašykite MongoDB užklausą, kad surastumėte restoranus, kurių cuisine nėra American, turi grade A, nepriklausančius Brooklyn borough. Surūšiuokite pagal cuisine nuo galo.
+
+
+14. Parašykite MongoDB užklausą, kad būtų rodomi atributai: restaurant_id, name, borough ir cuisine tų restoranų, kurių pirmos trys pavadinimo raidės yra 'Wil'.
+
+
+15. Parašykite MongoDB užklausą, kad būtų rodomi atributai: restaurant_id, name, borough ir cuisine tų restoranų, kurių paskutinės trys pavadinimo raidės yra 'ces'.
+
+
+16. Parašykite MongoDB užklausą, kad būtų rodomi atributai: restaurant_id, name, borough ir cuisine tų restoranų, kurių pavadinime (bet kur) yra raidės 'Reg'.
+
+
+17. Parašykite MongoDB užklausą, kad surastumėte restoranus, kurių cuisine yra arba American, arba Chinese.
+
+
+18. Parašykite MongoDB užklausą, kad būtų rodomi atributai: restaurant_id, name, borough ir cuisine tų restoranų, kurių borough yra Staten Island arba Queens, arba Bronx, arba Brooklyn.
+
+
+19. Parašykite MongoDB užklausą, kad būtų rodomi atributai: restaurant_id, name, borough ir cuisine tų restoranų, kurių borough nėra Staten Island arba Queens, arba Bronx, arba Brooklyn.
+
+
+20. Parašykite MongoDB užklausą, kad būtų rodomi atributai: restaurant_id, name, borough ir cuisine tų restoranų, kurių score nėra didesnis už 10.
+
+
+21. Parašykite MongoDB užklausą, kad surastumėte restoranus, kurių cuisine nėra American arba Chinese, arba kurių pavadinimo pirmos trys raidės nėra 'Wil'.
+
+
+22. Parašykite MongoDB užklausą, kad būtų rodomi atributai: restaurant_id, name, grade, tų restoranų, kurių grade yra A ir score yra 11, o ISODate "2014-08-11T00:00:00Z".
+
+
+23. Parašykite MongoDB užklausą, kad būtų rodomi atributai: restaurant_id, name, address ir location, tų restoranų, kurių koordinačių masyvo antrojo elemento reikšmė yra didesnė nei 42, bet ne didesnė nei 52.
+
+
+24. Surūšiuokite visus restoranus pagal jų pavadinimus abėcėline tvarka su visais jų duomenimis.
+
+
+25. Surūšiuokite visus restoranus pagal jų pavadinimus abėcėline tvarka nuo kito galo su visais jų duomenimis.
+
+
+26. Parašykite MongoDB užklausą, kad sužinotumėte, ar visuose adresuose yra street, ar ne.
+
+
+27. Parašykite MongoDB užklausą, kad būtų rodomi atributai: restaurant_id, name, grade, tų restoranų, kurių score dalinasi iš 7.
+
+
+28. Parašykite MongoDB užklausą, kad būtų rodomi atributai: name, borough, longitude, latitude ir cuisine tų restoranų, kurių pavadinime (bet kur) yra raidės 'mon'.
+
+
+29. Parašykite MongoDB užklausą, kad būtų rodomi atributai: name, borough, longitude, latitude ir cuisine tų restoranų, kurių pavadinimo pirmos trys raidės yra 'Mad'.
+
+
+30. Parašykite MongoDB užklausą, kad būtų rodomas name tų restoranų, kurių bent vienas score yra mažiau nei 5.
+
+
+31. Parašykite MongoDB užklausą, kad būtų rodomas name tų restoranų, kurių bent vienas score yra mažiau nei 5, o borough yra Manhattan.
+
+
+32. Parašykite MongoDB užklausą, kad būtų rodomas name tų restoranų, kurių bent vienas score yra mažiau nei 5, o borough yra Manhattan arba Brooklyn.
+
+
+33. Parašykite MongoDB užklausą, kad būtų rodomas name tų restoranų, kurių bent vienas score yra mažiau nei 5, borough yra Manhattan arba Brooklyn, o cuisine nėra American.
+
+
+34. Parašykite MongoDB užklausą, kad būtų rodomas name tų restoranų, kurių bent vienas score yra mažiau nei 5, borough yra Manhattan arba Brooklyn, o cuisine nėra American arba Chinese.
+
+
+35. Parašykite MongoDB užklausą, kad būtų rodomas name tų restoranų, kurių bent vienas score yra 2 ir 6.
+
+
+36. Parašykite MongoDB užklausą, kuri surastų kiekvieno restorano score vidurkį.
+
+
+37. Parašykite MongoDB užklausą, kuri surastų kiekvieno restorano aukščiausią score.
+
+
+38. Parašykite MongoDB užklausą, kuri surastų kiekvieno restorano žemiausią score.
+
+
+39. Parašykite MongoDB užklausą, kuri suskaičiuotų kiek yra restoranų kiekviename borough.
+
+
+40. Parašykite MongoDB užklausą, kuri suskaičiuotų kiek yra restoranų pagal kiekvieną cuisine.
+
+
+41. Parašykite MongoDB užklausą, kuri suskaičiuotų kiek yra restoranų, gavusių grade A pagal kiekvieną cuisine.
+
+
+42. Parašykite MongoDB užklausą, kuri suskaičiuotų kiek yra restoranų, gavusių grade A pagal kiekvieną borough.
+
+
+43. Parašykite MongoDB užklausą, kuri surastų kiekvieno cuisine score vidurkį.
+
+
+44. Parašykite MongoDB užklausą, kuri surastų kiekvieno cuisine aukščiausią score.
+
+
+45. Parašykite MongoDB užklausą, kuri surastų kiekvieno cuisine žemiausią score.
+
+
+46. Parašykite MongoDB užklausą, kuri surastų kiekvieno borough score vidurkį.
+
+
+47. Parašykite MongoDB užklausą, kuri surastų kiekvieno borough aukščiausią score.
+
+
+48. Parašykite MongoDB užklausą, kuri surastų kiekvieno borough žemiausią score.
+
+
+49. Parašykite MongoDB užklausą, kuri surastų visus restoranus, kurie turi bent po vieną grade A ir B. Pateikite tų restoranų name ir address.
+
+
+50. Parašykite MongoDB užklausą, kuri surastų visus restoranus, kurie turi žodį 'coffee' savo pavadinime. Pateikite tų restoranų name ir address.
+
+
+51. Parašykite MongoDB užklausą, kuri surastų visus restoranus, kurių zipcode prasideda su 10. Pateikite tų restoranų name ir address.
+
+
+52. Parašykite MongoDB užklausą, kuri surastų visus restoranus, kurių cuisine prasideda raide B. Pateikite tų restoranų name ir address.
+
+
+53. Parašykite MongoDB užklausą, kuri surastų visus restoranus, kurių cuisine baigiasi raide y. Pateikite tų restoranų name ir address.
+
+
+54. Parašykite MongoDB užklausą, kuri surastų visus restoranus, kurių cuisine turi žodį 'Pizza'. Pateikite tų restoranų name, address ir cuisine.
+
+
+55. Parašykite MongoDB užklausą, kuri surastų top 10 restoranų pagal score vidurkį. Pateikite tų restoranų name, address ir cuisine.
+
+
+56. Parašykite MongoDB užklausą, kuri surastų restoraną su aukščiausiu score vidurkiu su cuisine Turkish. 
+
+
+57. Parašykite MongoDB užklausą, kuri surastų top 10 restoranų pagal didžiausią bendrą score. Pateikite tų restoranų name, address ir cuisine.
+
+
+58. Parašykite MongoDB užklausą, kuri surastų visus Chinese restoranus Brooklyn'e.
+
+
+59. Parašykite MongoDB užklausą, kuri surastų restoraną su pačia naujausia grade data.
+
+
+60. Parašykite MongoDB užklausą, kuri surastų top 5 restoranus su aukščiausiu score vidurkiu pagal kiekvieną cuisine. Pateikite tų restoranų name, address, cuisine ir score vidurkį.

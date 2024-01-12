@@ -1,0 +1,82 @@
+1. Parašykite MongoDB užklausą, kuri surastų visą informaciją apie visus filmus, kurie buvo išleisti 1893 metais.
+
+
+2. Parašykite MongoDB užklausą, kuri surastų visą informaciją apie visus filmus, kurių trukmė yra ilgesnė nei 120 min.
+
+
+3. Parašykite MongoDB užklausą, kuri surastų visą informaciją apie visus filmus, kurių žanras yra Short.
+
+
+4. Parašykite MongoDB užklausą, kuri surastų visą informaciją apie visus filmus, kuriuos režisavo William K. L. Dickson.
+
+
+5. Parašykite MongoDB užklausą, kuri surastų visą informaciją apie visus filmus, kurie buvo išleisti JAV.
+
+
+6. Parašykite MongoDB užklausą, kuri surastų visą informaciją apie visus filmus, kurie yra UNRATED.
+
+
+7. Parašykite MongoDB užklausą, kuri surastų visą informaciją apie visus filmus, kurie turi daugiau nei 1000 IMDB votes.
+
+
+8. Parašykite MongoDB užklausą, kuri surastų visą informaciją apie visus filmus, kurių IMDB rating yra didesnis už 7.
+
+
+9. Parašykite MongoDB užklausą, kuri surastų visą informaciją apie visus filmus, kurių Tomatoes viewer rating yra didesnis už 4.
+
+
+10. Parašykite MongoDB užklausą, kuri surastų visus filmus, gavusius apdovanojimus. Pateikite filmų pavadinimus ir jų apdovanojimus.
+
+
+11. Parašykite MongoDB užklausą, kuri surastų title, languages, released, directors, writers, awards, year, genres, runtime, cast, countries visų filmų gavusių bent vieną nominaciją.
+
+
+12. Parašykite MongoDB užklausą, kuri surastų title, languages, released, directors, writers, awards, year, genres, runtime, cast, countries visų filmų, kurių cast turi Charles Kayser.
+
+
+13. Parašykite MongoDB užklausą, kuri surastų title, languages, released, directors, writers, countries visų filmų, kurie buvo išleisti 1893-05-09.
+
+
+14. Parašykite MongoDB užklausą, kuri surastų title, languages, released, directors, writers, countries visų filmų, kurių pavadinime yra žodis 'scene'.
+
+
+15. Parašykite MongoDB užklausą, kuri surastų title, languages, released, directors, viewer, writers, countries visų filmų, kurių Tomatoes viewer rating yra 3 arba 4.
+
+
+16. Parašykite MongoDB užklausą, kuri surastų title, languages, released, year, directors, writers, countries visų filmų, kurie buvo išleisti iki 1900.
+
+
+17. Parašykite MongoDB užklausą, kuri surastų title, languages, fullplot, released, directors, writers, countries visų filmų, kurių fullplot yra žodis 'fire'.
+
+
+18. Parašykite MongoDB užklausą, kuri surastų title, languages, plot, released, directors, writers, countries visų filmų, kurių plot yra žodis 'beer'.
+
+
+19. Parašykite MongoDB užklausą, kuri surastų title, languages, fullplot, released, directors, writers, countries visų filmų, kurių fullplot yra žodis 'metal'.
+
+
+20. Parašykite MongoDB užklausą, kuri surastų title, languages, fullplot, released, directors, writers, countries visų filmų, kurių trukmė yra tarp 60 ir 90 min.
+
+
+21. Parašykite MongoDB užklausą, kuri surastų title, languages, released, runtime, directors, writers, countries, imdb top 5 filmų pagal aukščiausią IMDB rating.
+
+
+22. Parašykite MongoDB užklausą, kuri surastų runtime vidurkį kiekvienoje valstybėje.
+
+
+23. Parašykite MongoDB užklausą, kuri surastų dažniausiai pasitaikantį žanrą filmuose.
+
+
+24. Parašykite MongoDB užklausą, kuri surastų visus filmus, kurie buvo išleisti tais metais, kurie turėjo aukščiausią IMDB rating vidurkį.
+
+
+25. Parašykite MongoDB užklausą, kuri surastų top 10 režisierių, turinčių didžiausią filmų kiekį.
+
+
+26. Parašykite MongoDB užklausą, kuri surastų IMDB ratingo vidurkį pagal PG, R, G ir t.t.
+
+
+27. Parašykite MongoDB užklausą, kuri surastų seniausią filmą, turintį apdovanojimą.
+
+
+28. Parašykite MongoDB užklausą, kuri surastų filmą, turintį aukščiausią IMDB ir Tomatoes viewer reitingus.
