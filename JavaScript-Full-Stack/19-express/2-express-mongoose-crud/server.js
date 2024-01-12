@@ -26,6 +26,20 @@ db.on('error', (err) => console.log(err))
 db.once('open', () => console.log('Connected to database successfully'))
 
 //====================================================
+// MONGO DATABASE SCHEMA
+//====================================================
+
+const BookSchema = new mongoose.Schema({
+    title: String,
+    author: String,
+    description: String,
+    publishedYear: Number,
+    price: Number
+});
+
+const Book = mongoose.model('Book', BookSchema)
+
+//====================================================
 // MIDDLEWARES
 //====================================================
 
@@ -36,28 +50,141 @@ app.use(express.json()) // use json
 //====================================================
 
 // imti visas knygas
-app.get('/books', (req, res) => {
-  res.send({message: 'GET /books NOT IMPLEMENTED'})
+app.get('/books', async (req, res) => {
+  // 1
+  //   res.send({message: 'GET /books NOT IMPLEMENTED'})
+
+  // 2
+  //const results = await Book.find()
+  //return res.send(results)
+
+  // 3
+  try {
+    const results = await Book.find() // db.books.find()
+    return res.send(results)
+} catch (error) {
+    res.status(500).send({message: error.message})
+}
 })
 
 // imti viena konkrecia knyga
-app.get('/books/:id', (req, res) => {
-    res.send({message: 'GET /books NOT IMPLEMENTED'})
+app.get('/books/:id', async (req, res) => {
+    // 1 
+    // res.send({message: 'GET /books NOT IMPLEMENTED'})
+
+    // 2
+    // console.log(req.params.id);
+    // res.send({message: 'some book', id: req.params.id})
+
+    // 3 
+    try {
+        let results = await  Book.findById(req.params.id)
+        if (!results) {
+            return res.status(404).send({message: 'Book not found'})
+        }
+        return res.send(results)
+    } catch (error) {
+        return res.status(500).send({message: error.message})
+    }
 })
 
 // sukurti naują knygą
-app.post('/books', (req, res) => {
-    res.send({message: 'POST /books NOT IMPLEMENTED'})
+app.post('/books', async (req, res) => {
+    // 1
+    // res.send({message: 'POST /books NOT IMPLEMENTED'})
+
+    // 2 
+    // res.send({message: 'new book', recieved_data: req.body})
+
+    // 3
+    try {
+        if (req.body.author == null) {
+            return res.status(400).send({message: 'Book author is required'})
+        }
+
+        let book = new Book(req.body)
+
+        // if (req.body.publishedYear < 1455) {
+        //     return res.send({message: 'Book published year cannot be less than 1455'})
+        // }
+
+        // if (req.body.author == null) {
+        //     book.author = 'Unknown'
+        // }
+
+        await book.save()
+        return res.send(book)
+    } catch (error) {
+        return res.status(500).send({message: error.message})
+    }
 })
 
 // atnaujinti konkrečią knygą
-app.patch('/books/:id', (req, res) => {
-    res.send({message: 'PATCH /books/:id NOT IMPLEMENTED'})
+app.patch('/books/:id', async (req, res) => {
+    // 1
+    // res.send({message: 'PATCH /books/:id NOT IMPLEMENTED'})
+
+    // 2
+    try {
+        let book = await Book.findById(req.params.id)
+        if (!book) {
+            return res.status(404).send({message: 'Book not found'})
+        }
+
+        // jeigu title atėjo, perrašau dabartinės knygos title į naują
+        if (req.body.title != null) {
+            book.title = req.body.title
+        }
+
+        // jeigu author atėjo, perrašau dabartinės knygos author į naują
+        if (req.body.author != null) {
+            book.author = req.body.author
+        }
+
+        // jeigu description atėjo, perrašau dabartinės knygos description į naują
+        if (req.body.description != null) {
+            book.description = req.body.description
+        }
+
+        // jeigu publishedYear atėjo, perrašau dabartinės knygos publishedYear į naują
+        if (req.body.publishedYear != null) {
+            book.publishedYear = req.body.publishedYear
+        }
+
+        // jeigu publishedYear atėjo, perrašau dabartinės knygos publishedYear į naują
+        if (req.body.publishedYear != null) {
+            if (req.body.publishedYear > new Date().getFullYear()) {
+                return res.status(400).send({message: 'Book published year cannot be more than current year'})
+            } else {
+                book.publishedYear = req.body.publishedYear
+            }
+        }
+
+        // jeigu price atėjo, perrašau dabartinės knygos price į naują
+        if (req.body.price != null) {
+            book.price = req.body.price
+        }
+
+        await book.save()
+        return res.send(book)
+
+    } catch (error) {
+        return res.status(500).send({message: error.message})
+    }
 })
 
 // ištrinti konkrečią knygą
-app.delete('/books/:id', (req, res) => {
-    res.send({message: 'DELETE /books/:id NOT IMPLEMENTED'})
+app.delete('/books/:id', async (req, res) => {
+    // 1
+    // res.send({message: 'DELETE /books/:id NOT IMPLEMENTED'})
+
+    // 2
+    try {
+        await Book.findByIdAndDelete(req.params.id)
+        return res.send({message: 'Book deleted successfully'})
+    } catch (error) {
+        return res.status(500).send({message: error.message})
+    }
 })
 
 //====================================================

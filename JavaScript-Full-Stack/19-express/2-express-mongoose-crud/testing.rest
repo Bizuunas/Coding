@@ -2,7 +2,35 @@ GET http://localhost:3000/books
 
 ###
 
-GET http://localhost:3000/books/asjdghaslkjdfhgakls
+GET http://localhost:3000/books/65a10bbe977cd218f5c94329
 
 ###
+
+GET http://localhost:3000/books/neegzistuojanti
+
+###
+
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+    "title": "Knyga",
+    "author": "Autorius",
+    "pages": 100
+}
+
+###
+
+DELETE http://localhost:3000/books/65a1430c39ca39a41855e253
+
+###
+
+###
+
+PATCH http://localhost:3000/books/65a10977977cd218f5c94327
+Content-Type: application/json
+
+{
+    "publishedYear": 2025
+}
 
