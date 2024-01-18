@@ -1,0 +1,33 @@
+GET http://localhost:3000/todo
+
+###
+
+GET http://localhost:3000/todos/
+
+###
+
+GET http://localhost:3000/todo/neegzistuojanti
+
+###
+
+POST http://localhost:3000/todo
+Content-Type: application/json
+
+{
+    "title": "Knyga",
+    "description": "Autorius",
+    "completed": true
+}
+
+###
+
+DELETE http://localhost:3000/todo/65a52c47c49f665e115afe46
+
+###
+
+PATCH http://localhost:3000/todo/65a529c57d4da7ef68041e55
+Content-Type: application/json
+
+{
+    "completed": true
+}

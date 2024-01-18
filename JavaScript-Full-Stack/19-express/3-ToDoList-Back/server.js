@@ -4,6 +4,7 @@
 
 const express = require('express')
 const mongoose = require('mongoose')
+const cors = require('cors')
 
 //====================================================
 // CONFIGS
@@ -16,7 +17,7 @@ const port = 3000
 // MONGO CONNECTION
 //====================================================
 
-mongoose.connect('mongodb://127.0.0.1:27017/books_db');
+mongoose.connect('mongodb://127.0.0.1:27017/todo-app');
 // tas pats kas: mongodb://localhost:27017/books_db
 // bet localhost neveikia :(((
 
@@ -27,22 +28,21 @@ db.once('open', () => console.log('Connected to database successfully'))
 
 //====================================================
 // MONGO DATABASE SCHEMA
-//==================================================== 
+//====================================================
 
-const BookSchema = new mongoose.Schema({
+const ToDoList = new mongoose.Schema({
     title: String,
-    author: String,
     description: String,
-    publishedYear: Number,
-    price: Number
+    completed: Boolean
 });
 
-const Book = mongoose.model('Book', BookSchema)
+const Todo = mongoose.model('todo', ToDoList)
 
 //====================================================
 // MIDDLEWARES
 //====================================================
 
+app.use(cors({ origin: 'http://localhost:27017 ' }))
 app.use(express.json()) // use json
 
 //====================================================
@@ -50,7 +50,7 @@ app.use(express.json()) // use json
 //====================================================
 
 // imti visas knygas
-app.get('/books', async (req, res) => {
+app.get('/todos', async (req, res) => {
   // 1
   //   res.send({message: 'GET /books NOT IMPLEMENTED'})
 
@@ -60,7 +60,7 @@ app.get('/books', async (req, res) => {
 
   // 3
   try {
-    const results = await Book.find() // db.books.find()
+    const results = await Todo.find() // db.todos.find()
     return res.send(results)
 } catch (error) {
     res.status(500).send({message: error.message})
@@ -68,7 +68,7 @@ app.get('/books', async (req, res) => {
 })
 
 // imti viena konkrecia knyga
-app.get('/books/:id', async (req, res) => {
+app.get('/todo/:id', async (req, res) => {
     // 1 
     // res.send({message: 'GET /books NOT IMPLEMENTED'})
 
@@ -78,9 +78,9 @@ app.get('/books/:id', async (req, res) => {
 
     // 3 
     try {
-        let results = await  Book.findById(req.params.id)
+        let results = await  Todo.findById(req.params.id)
         if (!results) {
-            return res.status(404).send({message: 'Book not found'})
+            return res.status(404).send({message: 'Todo not found'})
         }
         return res.send(results)
     } catch (error) {
@@ -89,7 +89,7 @@ app.get('/books/:id', async (req, res) => {
 })
 
 // sukurti naują knygą
-app.post('/books', async (req, res) => {
+app.post('/todo', async (req, res) => {
     // 1
     // res.send({message: 'POST /books NOT IMPLEMENTED'})
 
@@ -98,11 +98,11 @@ app.post('/books', async (req, res) => {
 
     // 3
     try {
-        if (req.body.author == null) {
-            return res.status(400).send({message: 'Book author is required'})
+        if (req.body.title == null) {
+            return res.status(400).send({message: 'Todo title is required'})
         }
 
-        let book = new Book(req.body)
+        let todo = new Todo(req.body)
 
         // if (req.body.publishedYear < 1455) {
         //     return res.send({message: 'Book published year cannot be less than 1455'})
@@ -112,61 +112,42 @@ app.post('/books', async (req, res) => {
         //     book.author = 'Unknown'
         // }
 
-        await book.save()
-        return res.send(book)
+        await todo.save()
+        return res.send(todo)
     } catch (error) {
         return res.status(500).send({message: error.message})
     }
 })
 
 // atnaujinti konkrečią knygą
-app.patch('/books/:id', async (req, res) => {
+app.patch('/todo/:id', async (req, res) => {
     // 1
     // res.send({message: 'PATCH /books/:id NOT IMPLEMENTED'})
 
     // 2
     try {
-        let book = await Book.findById(req.params.id)
-        if (!book) {
-            return res.status(404).send({message: 'Book not found'})
+        let todo = await Todo.findById(req.params.id)
+        if (!todo) {
+            return res.status(404).send({message: 'Todo not found'})
         }
 
         // jeigu title atėjo, perrašau dabartinės knygos title į naują
         if (req.body.title != null) {
-            book.title = req.body.title
+            todo.title = req.body.title
         }
 
         // jeigu author atėjo, perrašau dabartinės knygos author į naują
-        if (req.body.author != null) {
-            book.author = req.body.author
+        if (req.body.description != null) {
+            todo.description = req.body.description
         }
 
         // jeigu description atėjo, perrašau dabartinės knygos description į naują
-        if (req.body.description != null) {
-            book.description = req.body.description
+        if (req.body.completed != null) {
+            todo.completed = req.body.completed
         }
 
-        // jeigu publishedYear atėjo, perrašau dabartinės knygos publishedYear į naują
-        if (req.body.publishedYear != null) {
-            book.publishedYear = req.body.publishedYear
-        }
-
-        // jeigu publishedYear atėjo, perrašau dabartinės knygos publishedYear į naują
-        if (req.body.publishedYear != null) {
-            if (req.body.publishedYear > new Date().getFullYear()) {
-                return res.status(400).send({message: 'Book published year cannot be more than current year'})
-            } else {
-                book.publishedYear = req.body.publishedYear
-            }
-        }
-
-        // jeigu price atėjo, perrašau dabartinės knygos price į naują
-        if (req.body.price != null) {
-            book.price = req.body.price
-        }
-
-        await book.save()
-        return res.send(book)
+        await todo.save()
+        return res.send(todo)
 
     } catch (error) {
         return res.status(500).send({message: error.message})
@@ -174,14 +155,14 @@ app.patch('/books/:id', async (req, res) => {
 })
 
 // ištrinti konkrečią knygą
-app.delete('/books/:id', async (req, res) => {
+app.delete('/todo/:id', async (req, res) => {
     // 1
     // res.send({message: 'DELETE /books/:id NOT IMPLEMENTED'})
 
     // 2
     try {
-        await Book.findByIdAndDelete(req.params.id)
-        return res.send({message: 'Book deleted successfully'})
+        await Todo.findByIdAndDelete(req.params.id)
+        return res.send({message: 'ToDo deleted successfully'})
     } catch (error) {
         return res.status(500).send({message: error.message})
     }
