@@ -1,0 +1,7 @@
+GET http://localhost:3000/pacientai
+
+###
+
+GET http://localhost:3000/pacient/65d2353a14dc7807abaed153
+
+###

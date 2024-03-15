@@ -4,7 +4,7 @@
 
 const express = require('express')
 const mongoose = require('mongoose')
-
+const cors = require('cors');
 
 //====================================================
 // CONFIGS
@@ -50,7 +50,7 @@ const Todo = mongoose.model('ToDo', TodoSchema)
 //====================================================
 
 app.use(express.json()) // use json
-
+app.use(cors());
 
 //====================================================
 // ROUTES
@@ -97,8 +97,8 @@ app.put('/todo/complete/:id', async (req, res) => {
     
     todo.save()
     
-    res.json(todo)
-    
+    // res.json(todo)
+    res.send(todo)
 
     // try {
     //     await Todo.findById(req.params.id)
