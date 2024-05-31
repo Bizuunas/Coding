@@ -1,0 +1,591 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", "Blinker";
+    box-sizing: border-box;
+}
+
+.header {
+    background: white;
+    width: 100%;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.header ul li {
+    margin: 0 20px;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+#kalba {
+    margin: 0 20px;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+#anglu {
+    margin: -5px -15px;
+    width: 30px;
+    height: 30px;
+}
+
+/* =======================================
+PIRMAS BLOKAS
+======================================= */
+
+.main-background {
+    background-position: center;
+    background-image: url(./fotkes/main-background.jpg);
+    background-attachment: fixed;
+    max-width: 100%;
+    display: block;
+    height: 100vh;
+}
+
+.separator::after {
+    content: "";
+    display: block;
+    background-color: #dd9819;
+    width: 100px;
+    height: 2px;
+    margin-left: 35%;
+    margin-top: 1%;
+}
+
+.center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.main-text-size {
+    font-size: 57px;
+}
+
+.secondary-text-size {
+    font-size: 30px;
+    text-align: center;
+    text-wrap: nowrap;
+}
+
+.third-text-size {
+    font-size: 25px;
+}
+
+.fourth-text-size {
+    font-size: 12px;
+}
+
+.secondary-text {
+    color: white;
+    font-family: "Roboto";
+}
+
+/* =======================================
+ANTRAS BLOKAS
+======================================= */
+
+p,
+li {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+}
+
+
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.height800 {
+    height: 800px;
+}
+
+.services-header {
+    width: 80%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 0 35px 0;
+    text-align: center;
+}
+
+.paslaugos {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 80%;
+    margin: 25px 0 35px 0;
+}
+
+.antraste {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.separator2::after {
+    content: "";
+    display: block;
+    background-color: #dd9819;
+    width: 100px;
+    height: 1px;
+}
+
+h3,
+h1,
+h4 {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.img-2 {
+    background-image: url(./fotkes/antra-nuotrauka.JPG);
+}
+
+/* =======================================
+TRECIAS BLOKAS
+======================================= */
+
+.margin25 {
+    margin: 25px 0 0 0;
+}
+
+.height350 {
+    height: 350px;
+}
+
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+.nuotrauka {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 250px;
+}
+
+.card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    height: 300px;
+    width: 290px;
+    text-align: center;
+
+}
+
+.border {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid #dd9933;
+    background-size: 45px 45px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.kabina {
+    background-image: url(icons/home.png);
+}
+
+.check {
+    background-image: url(icons/included.png);
+}
+
+.nuolaida {
+    background-image: url(icons/discount.png);
+}
+
+.img-3 {
+    background-image: url(./fotkes/trecia-nuotrauka.jpg);
+}
+
+/* =======================================
+KETVIRTAS BLOKAS
+======================================= */
+
+.img-4 {
+    background-image: url(./fotkes/ketvirta-nuotrauka.jpg);
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 8%;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+/* =======================================
+PENKTAS BLOKAS
+======================================= */
+
+.kontaktai {
+    width: 20px;
+    height: 20px;
+    margin: -2px 10px;
+}
+
+.margin-bottom-50 {
+    margin-bottom: 50px;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #0A5F38;
+    padding: 0 100px;
+    width: 100%;
+    height: 50px;
+}
+
+.filler {
+    height: 100vh;
+}
+
+/* =======================================
+MEDIA QUERIES
+======================================= */
+
+@media only screen and (max-width: 500px) {
+
+    #margin10 {
+        margin: 0;
+    }
+
+    p,
+    li {
+        font-size: 12px;
+    }
+
+    .header ul li {
+        min-width: 150px;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header ul {
+        align-items: flex-start;
+    }
+
+    .third-text-size {
+        font-size: 14px;
+    }
+
+    .header {
+        width: 100%;
+        padding: 0 20px 0 20px;
+        position: sticky;
+    }
+
+    .header ul,
+    .header a {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .main-background {
+        background-image: url(./fotkes/main-background.jpg);
+        display: block;
+        object-fit: contain;
+        background-position: center;
+    }
+
+    .main-img {
+        width: 100vw;
+        overflow: hidden;
+        height: 50vh;
+        background-repeat: no-repeat;
+        background-position: none;
+        background-size: auto;
+        background-attachment: local;
+    }
+
+    .main-text-size {
+        font-size: 20px;
+    }
+
+    .separator::after {
+        width: 50px;
+        margin-left: 18%;
+        margin-top: 0%;
+    }
+
+    .secondary-text-size {
+        font-size: 14px;
+    }
+
+    .center-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .height800 {
+        height: 400px;
+    }
+
+    .services-header {
+        margin: 25px 0 25px 0;
+        height: 10%;
+    }
+
+    .margin25 {
+        margin: 0;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .mobile-margin {
+        margin: 20px 0 0 0;
+    }
+
+    .card {
+        margin: 20px 0 0 0;
+    }
+
+    .height350 {
+        height: 550px;
+    }
+
+    .header ul li {
+        margin: 0 0 5px 0;
+    }
+
+    #kalba {
+        margin: 0 0 5px 0;
+    }
+
+    .kontaktai {
+        width: 10px;
+        height: 10px;
+    }
+
+    #anglu {
+        width: 10px;
+        height: 10px;
+        margin: 1px 5px -1px -55px;
+    }
+
+    .img-2 {
+        background-image: url(./fotkes/antra-nuotrauka.JPG);
+        display: block;
+        object-fit: cover;
+        background-position: center;
+    }
+
+    .img-3 {
+        background-image: url(./fotkes/trecia-nuotrauka.jpg);
+        display: block;
+        object-fit: cover;
+        background-position: right;
+    }
+
+    .mobile-img {
+        width: 100vw;
+        overflow: hidden;
+        height: 30vh;
+        background-repeat: no-repeat;
+        background-position: none;
+        background-size: auto;
+        background-attachment: local;
+    }
+
+}
+
+@media only screen and (min-width: 501) and (max-width: 1023px) {
+
+    #lietuviu {
+        margin: 1px 5px -1px -20px;
+        width: 10px;
+        height: 10px;
+    }
+
+
+    p,
+    li {
+        font-size: 18px;
+    }
+
+    .header ul li {
+        font-size: 20px;
+    }
+
+    .header ul li {
+        min-width: 150px;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header ul {
+        align-items: flex-start;
+    }
+
+    .third-text-size {
+        font-size: 14px;
+    }
+
+    .header {
+        width: 100%;
+        padding: 0 20px 0 20px;
+        position: sticky;
+    }
+
+    .header ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    /* .main-background {
+        background-size: cover;
+        max-width: 100%;
+        background-position: center;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+    } */
+
+    .main-text-size {
+        font-size: 25px;
+    }
+
+    .separator::after {
+        width: 50px;
+    }
+
+    .secondary-text-size {
+        font-size: 20px;
+    }
+
+    .height800 {
+        height: 650px;
+    }
+
+    .services-header {
+        margin: 20px 0 20px 0;
+    }
+
+    .margin25 {
+        margin: 20px 0 0 0;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .mobile-margin {
+        margin: 20px 0 0 0;
+    }
+
+    .card {
+        margin: 20px 0 0 0;
+    }
+
+    .height350 {
+        height: 550px;
+    }
+
+    .header ul li {
+        margin: 0 0 5px 0;
+    }
+
+    #kalba {
+        margin: 0 0 5px 0;
+    }
+
+    .kontaktai {
+        width: 10px;
+        height: 10px;
+    }
+
+    #anglu {
+        width: 10px;
+        height: 10px;
+        margin: 1px 5px -1px -55px;
+    }
+
+    .height650 {
+        height: 650px;
+    }
+
+    .center-text {
+        top: 35%;
+    }
+}

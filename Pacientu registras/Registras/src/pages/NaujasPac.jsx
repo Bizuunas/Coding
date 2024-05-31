@@ -19,32 +19,58 @@ const NaujasPac = () => {
 
         <div className='gimimo-data'>
           <h3>Gimimo data</h3>
-          <input type="date" placeholder='Gimimo data'/>
+          <input type="date" placeholder='Gimimo data' />
         </div>
 
         <div className='adresas'>
           <h3>Adresas</h3>
-          <input type="text" placeholder='Adresas'/>
+          <input type="text" placeholder='Adresas' />
         </div>
 
         <div className='socialine-padetis'>
           <h3>Socialinė padėtis/ Profesija</h3>
-          <input type="text" placeholder='Profesija'/>
+          <input type="text" placeholder='Profesija' />
         </div>
 
+        <div className="telNr">
+          <h3>Telefonos numeris</h3>
+          <input type="text" placeholder="Paciento telefono numeris" />
+        </div>
+        
         <div className='lytis'>
           <h3>Lytis</h3>
           <label>
-            <input type="radio" name='lytis' value="Vyras"/>
+            <input type="radio" name='lytis' value="Vyras" />
             Vyras
           </label>
           <label>
-            <input type="radio" name='lytis' value="Moteris"/>
+            <input type="radio" name='lytis' value="Moteris" />
             Moteris
           </label>
           <label>
-            <input type="radio" name='lytis' value="Kita"/>
+            <input type="radio" name='lytis' value="Kita" />
             Kita
+          </label>
+        </div>
+
+        <div className='klausimai'>
+          <h3>Jautrumas Medikamentam</h3>
+          <label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </label>
+        </div>
+        
+        <div className='klausimai'>
+          <h3>Alergijos</h3>
+          <label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </label>
+        </div>
+        
+        <div className='klausimai'>
+          <h3>Ar nesirgo (neserga): Hepatitu A / B / C ; ŽIV</h3>
+          <label>
+            <textarea name="klausimai" value="" cols="30" rows="10"></textarea>
           </label>
         </div>
 
@@ -53,11 +79,7 @@ const NaujasPac = () => {
           <textarea name="" id="" maxCols="20" ></textarea>
         </div>
 
-
       </div>
-      {/* <div className='kortele2'>
-      
-      </div> */}
     </>
   )
 }

@@ -20,7 +20,7 @@ h2 {
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    gap: 50px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
@@ -30,8 +30,15 @@ h2 {
 }
 
 .paciento-ligos-istorija textarea {
+    max-height: 500px;
     max-width: 800px;
     height: 200px;
     width: 800px;
-    max-height: 500px;
+}
+
+.klausimai textarea {
+    max-height: 50px;
+    max-width: 800px;
+    height: 20px;
+    width: 800px;
 }
